@@ -1,4 +1,4 @@
-# Laravel Retry on Duplicate Key [![Build Status](https://github.com/mpyw/laravel-retry-on-duplicate-key/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/mpyw/laravel-retry-on-duplicate-key/actions) [![Coverage Status](https://coveralls.io/repos/github/mpyw/laravel-retry-on-duplicate-key/badge.svg?branch=master)](https://coveralls.io/github/mpyw/laravel-retry-on-duplicate-key?branch=master)
+# Laravel Retry on Duplicate Key [![Build Status](https://github.com/nison-okrock/laravel-retry-on-duplicate-key/actions/workflows/ci.yml/badge.svg?branch=master)](https://github.com/nison-okrock/laravel-retry-on-duplicate-key/actions) [![Coverage Status](https://coveralls.io/repos/github/nison-okrock/laravel-retry-on-duplicate-key/badge.svg?branch=master)](https://coveralls.io/github/nison-okrock/laravel-retry-on-duplicate-key?branch=master)
 
 Automatically retry **non-atomic** upsert operation when unique constraints are violated.
 
