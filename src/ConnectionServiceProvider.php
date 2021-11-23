@@ -16,9 +16,17 @@ class ConnectionServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        Connection::resolverFor('mysql', fn (...$args) => new MySqlConnection(...$args));
-        Connection::resolverFor('pgsql', fn (...$args) => new PostgresConnection(...$args));
-        Connection::resolverFor('sqlite', fn (...$args) => new SQLiteConnection(...$args));
-        Connection::resolverFor('sqlsrv', fn (...$args) => new SqlServerConnection(...$args));
+        Connection::resolverFor('mysql', function (...$args) {
+            return new MySqlConnection(...$args);
+        });
+        Connection::resolverFor('pgsql', function (...$args) {
+            return new PostgresConnection(...$args);
+        });
+        Connection::resolverFor('sqlite', function (...$args) {
+            return new SQLiteConnection(...$args);
+        });
+        Connection::resolverFor('sqlsrv', function (...$args) {
+            return new SqlServerConnection(...$args);
+        });
     }
 }

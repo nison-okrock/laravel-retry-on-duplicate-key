@@ -15,7 +15,10 @@ use PHPStan\Type\Type;
 
 final class RetryOnDuplicateKeyMethod implements MethodReflection
 {
-    private ClassReflection $class;
+    /**
+     * @var ClassReflection
+     */
+    private $class;
 
     public function __construct(ClassReflection $classReflection)
     {
@@ -70,10 +73,11 @@ final class RetryOnDuplicateKeyMethod implements MethodReflection
             $variants[] = new FunctionVariant(
                 TemplateTypeMap::createEmpty(),
                 null,
-                [
-                    new CallableParameter($argumentParameters),
-                    ...$argumentParameters,
-                ],
+                array_merge(
+                    [new CallableParameter($argumentParameters)],
+                    $argumentParameters
+                )
+                ,
                 false,
                 new MixedType(),
             );
