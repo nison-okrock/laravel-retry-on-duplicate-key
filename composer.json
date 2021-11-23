@@ -23,7 +23,7 @@
         "files": ["tests/polyfill.php.stub"]
     },
     "require": {
-        "php": "^7.4 || ^8.0",
+        "php": "^7.3 || ^7.4 || ^8.0",
         "ext-pdo": "*",
         "illuminate/support": "^6.0 || ^7.0 || ^8.0 || ^9.0",
         "illuminate/database": "^6.0 || ^7.0 || ^8.0 || ^9.0",

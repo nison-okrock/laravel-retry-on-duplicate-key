@@ -16,7 +16,7 @@ class Test extends BaseTestCase
     /**
      * @var string[]
      */
-    protected array $queries = [];
+    protected $queries = [];
 
     /**
      * @param \Illuminate\Foundation\Application $app

@@ -12,7 +12,7 @@ final class CallableParameter implements ParameterReflection
     /**
      * @var CallableArgumentParameter[]
      */
-    private array $argumentParameters;
+    private $argumentParameters;
 
     /**
      * @param CallableArgumentParameter[] $argumentParameters

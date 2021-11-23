@@ -10,7 +10,7 @@ Original Issue:  [Duplicate entries on updateOrCreate · Issue #19372 · laravel
 
 | Package | Version | Mandatory |
 |:---|:---|:---:|
-| PHP | <code>^7.4 &#124;&#124; ^8.0</code> | ✅ |
+| PHP | <code>^7.3 &#124;&#124; ^7.4 &#124;&#124; ^8.0</code> | ✅ |
 | Laravel | <code>^6.0 &#124;&#124; ^7.0 &#124;&#124; ^8.0 &#124;&#124; ^9.0</code> | ✅ |
 | PHPStan | <code>&gt;=1.1</code> | |
 

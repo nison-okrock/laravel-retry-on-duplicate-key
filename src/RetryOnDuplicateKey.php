@@ -8,7 +8,10 @@ use PDOException;
 
 class RetryOnDuplicateKey
 {
-    protected ConnectionInterface $connection;
+    /**
+     * @var ConnectionInterface
+     */
+    protected $connection;
 
     public function __construct(ConnectionInterface $connection)
     {
